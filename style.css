@@ -84,6 +84,7 @@ div#startButton:hover{
 	position: relative;
 	top: 20px;
 	border-radius: 5px 5px 0px 0;
+	font-size: 20px;
 }
 #refreshButton{
 	height: 70px;
