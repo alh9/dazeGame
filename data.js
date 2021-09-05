@@ -230,13 +230,13 @@ function checkLooseWin(score){
   document.removeEventListener('keydown',isItCorrect)
   container.style.display='block'
   looseWinBox.style.display='block'
-  if(score>=3){
+  if(score>=5){
     looseWinText.innerHTML ='it was too damn close!'
   } 
-  if(score<3){
+  if(score<5){
     looseWinText.innerHTML ='you have to try more dude!'
   }
-  if(score>=5){
+  if(score>=10){
     looseWinText.innerHTML ='finally you win a game in your life!'
   }
   refreshBtn.addEventListener('click',refresh)
