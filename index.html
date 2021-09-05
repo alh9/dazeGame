@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel ="stylesheet" type ="text/css" href = "fonts.css">    
+    <title>first game ever!</title>
+</head>
+<body>
+  <div id="transparentContainer"></div>
+  <p id="counter"></p>	
+  <div id="instruction">
+		<div class="instText">
+			<div>
+				<p>
+					you have to read the color which is game's question and has been written in a rectangle which is on top of the 5 squares , those 5 squares are game's answers and you have to match the game's question color with the squares . and when you find the right square , read the direction which has been written in it and for "right" hit numberpad enter button(it's in right side of your keyboard) and for "left" hit keypad enter button (it's in middle of keyboard) .<br>
+          true answer : +1<br>
+          false answer or time out : -2<br>   
+          time award : yes  <br>
+				</p>
+			</div>
+		</div>
+  	<div id="startButton">
+      start
+    </div>	
+	</div>
+  <div id="resultNav">
+  	<div class="score">
+      <p>score:<span id="score">0</span></p>
+    </div>
+  	<div id="billboard">
+      <p>lucky!</p>
+    </div>
+    <div class="time">
+      <p>time:<span id="time"></span>s</p>
+    </div>
+  </div>
+  <div id="textColor">
+    <p id="question"></p>
+  </div>
+  <div id="answerContainer">
+  	<div class="options" id="option1"></div>
+  	<div class="options" id="option2"></div>
+  	<div class="options" id="option3"></div>
+  	<div class="options" id="option4"></div>
+  	<div class="options" id="option5"></div>
+  </div>
+ 	<div id="looseOrWin">
+    <div class="LOWtext">
+	  	<p id="LOWtxt"></p>
+	    <p>your score in this game : </p>
+     <p id="lastScore"></p>
+    </div>
+	  <div id="refreshButton">
+      refresh
+    </div>
+	</div>
+  <div id="error"><p>this game just supports computers and laptops!</p></div>
+  <script src="data.js"></script>
+</body>
+</html>
