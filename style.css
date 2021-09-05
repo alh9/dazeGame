@@ -231,9 +231,7 @@ div#error p {
 	color: red;
 	font-size: 40px;
 }
-div p{
-	font-family:Conv_CHILLER;
-}
+
 .instText div p{font-family: none;}
 @keyframes deleteShadow {
 	0% {box-shadow: box-shadow: 5px 5px 15px black;}
