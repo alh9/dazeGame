@@ -15,7 +15,7 @@ div#transparentContainer{
 }
 #instruction{
 	height: 800px;
-	width: 300px;
+	width: 340px;
 	background-color: #f5c5b3;
 	margin: auto;
 	position: absolute;
@@ -27,7 +27,7 @@ div#transparentContainer{
 }
 .instText{
 	opacity: 0;
-	width: 270px;
+	width: 320px;
 	height: 490px;
 	background-color: white;
 	margin: auto;
