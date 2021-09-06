@@ -67,8 +67,8 @@ div#startButton:hover{
 	height: 45px;
 }
 #looseOrWin{
-	width: 120px;
-	height: 140px;
+	width: 240px;/*new*/
+	height: 150px;/*new*/
 	background-color: orange;
 	position: absolute;
 	left: 45%;
@@ -77,13 +77,17 @@ div#startButton:hover{
 	display: none;
 }
 .LOWtext {
-	height: 100px;
-	width: 90px;
+	height: 130px;/*new*/
+	width: 200px;/*new*/
 	background-color: white;
 	margin: auto;
 	position: relative;
 	top: 20px;
 	border-radius: 5px 5px 0px 0;
+	padding: 3px;/*new*/
+}
+.LOWtext p {
+	font-size: 25px;/*new*/
 }
 .LOWtext p {
 	font-size:18px;
@@ -93,8 +97,8 @@ div#startButton:hover{
 	width: 70px;
 	background-color: silver;
 	position: relative;
-	top: 13px;
-	left: 25px;
+	top: 0px;/*new*/
+	left: 85px;/*new*/
 	border-radius: 35px;
 	color: black;
 	padding-top: 16px;
