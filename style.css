@@ -89,6 +89,9 @@ div#startButton:hover{
 .LOWtext p {
 	font-size: 25px;/*new*/
 }
+.LOWtext p {
+	font-size:18px;
+}
 #refreshButton{
 	height: 70px;
 	width: 70px;
