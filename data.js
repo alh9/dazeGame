@@ -41,7 +41,7 @@ var checkEnd=false;
 var whatTime;
 
 window.addEventListener('load',function(){
-  if(this.innerWidth<770){
+  if(this.innerWidth<1024){
     container.style.display='none'
     counter.style.display='none'
     instuctions.style.display='none'
