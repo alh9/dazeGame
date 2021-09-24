@@ -58,7 +58,6 @@ window.addEventListener('load',function(){
   }
 })
 function startWithEnter(event){
-  console.log(event)
   if (event.keyCode === 13) {
     event.preventDefault();
     startBtn.click();
