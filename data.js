@@ -58,6 +58,7 @@ window.addEventListener('load',function(){
   }
 })
 function startWithEnter(event){
+  console.log(event)
   if (event.keyCode === 13) {
     event.preventDefault();
     startBtn.click();
@@ -96,10 +97,10 @@ function gameGoesOn(){
   intvl2 = setInterval(timeDecrease,1000)
 }
 function isItCorrect(event){
-  if(event.keyCode === 13){
+  if(event.key === 'Shift'){
     event.preventDefault();
     document.removeEventListener('keydown',isItCorrect)
-      if(event.code ==='Enter' && textOfTextColor.children[0].innerHTML=='left'){
+      if(event.code ==='ShiftLeft' && textOfTextColor.children[0].innerHTML=='left'){
         var x = timeDecrease(true,true,true)
         var timeAw = time[x];
         if(x==5){
@@ -119,7 +120,7 @@ function isItCorrect(event){
           textOfTextColor=newLevel()  
         }  
       }  
-      else if(event.code === 'NumpadEnter' && textOfTextColor.children[0].innerHTML=='right'){
+      else if(event.code === 'ShiftRight' && textOfTextColor.children[0].innerHTML=='right'){
         var x = timeDecrease(true,true,true)
         var timeAw = time[x];
         if(x==5){
@@ -230,10 +231,10 @@ function checkLooseWin(score){
   document.removeEventListener('keydown',isItCorrect)
   container.style.display='block'
   looseWinBox.style.display='block'
-  if(score>=5){
+  if(score>6){
     looseWinText.innerHTML ='it was too damn close!'
   } 
-  if(score<5){
+  if(score<=6){
     looseWinText.innerHTML ='you have to try more dude!'
   }
   if(score>=10){
